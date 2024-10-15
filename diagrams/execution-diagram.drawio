@@ -1,0 +1,55 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="X2maVqHfdv_pzFdbr4a_">
+    <mxGraphModel dx="811" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YVc4VXAhoMXWnYawSSKb-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="YVc4VXAhoMXWnYawSSKb-1" target="YVc4VXAhoMXWnYawSSKb-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YVc4VXAhoMXWnYawSSKb-1" value="Java Spark app" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YVc4VXAhoMXWnYawSSKb-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="YVc4VXAhoMXWnYawSSKb-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="130" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="260" y="130" />
+              <mxPoint x="260" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YVc4VXAhoMXWnYawSSKb-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YVc4VXAhoMXWnYawSSKb-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="750" y="130" />
+              <mxPoint x="750" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YVc4VXAhoMXWnYawSSKb-2" value="Apache Spark" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YVc4VXAhoMXWnYawSSKb-4" value="1. spark-submit" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="280" y="90" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YVc4VXAhoMXWnYawSSKb-6" value="2. execute app" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="370" y="170" width="105" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YVc4VXAhoMXWnYawSSKb-7" value="Data" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="230" y="280" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YVc4VXAhoMXWnYawSSKb-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.656;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="YVc4VXAhoMXWnYawSSKb-7" target="YVc4VXAhoMXWnYawSSKb-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YVc4VXAhoMXWnYawSSKb-9" value="3. ingest data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="370" y="280" width="105" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YVc4VXAhoMXWnYawSSKb-12" value="4. write result" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="640" y="90" width="100" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

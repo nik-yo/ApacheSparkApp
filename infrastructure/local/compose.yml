@@ -1,0 +1,44 @@
+name: apache-spark-app
+services:
+  # spark-master:
+  #   image: spark:3.5.3-scala2.12-java17-python3-r-ubuntu
+  #   container_name: spark-master
+  #   restart: no
+  #   # https://spark.apache.org/docs/3.5.3/spark-standalone.html
+  #   ports:
+  #     - 8080:8080 # web UI for master
+  #     - 7077:7077 # service port for master
+  #   # environment:
+  #   #  - SPARK_LOCAL_IP=spark-master
+  #   #  - SPARK_MASTER_HOST=master
+  #   volumes:
+  #     - 'C:\data\spark\apps:/opt/spark-apps'
+  #     - 'C:\data\spark\data:/opt/spark-data'
+  #     - 'C:\data\spark\results:/opt/spark-results'
+  spark:
+    image: docker.io/bitnami/spark:3.5.3
+    environment:
+      - SPARK_MODE=master
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+      - SPARK_USER=spark
+    ports:
+      - '8080:8080'
+    volumes:
+      - 'C:\data\spark\apps:/opt/spark/apps'
+      - 'C:\data\spark\data:/opt/spark/data'
+      - 'C:\data\spark\results:/opt/spark/results'
+  spark-worker:
+    image: docker.io/bitnami/spark:3.5.3
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark:7077
+      - SPARK_WORKER_MEMORY=1G
+      - SPARK_WORKER_CORES=1
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+      - SPARK_USER=spark    
